@@ -29,9 +29,8 @@ const Home = () => {
                     <Welcome
 
                     />
-
-                    <RecentEvents />
                     <UpcomingEvents />
+                    <RecentEvents />
                 </View>
             </ScrollView>
         </SafeAreaView>

@@ -55,10 +55,12 @@ const styles = StyleSheet.create({
   tabsContainer: {
     width: "100%",
     marginTop: SIZES.medium,
+    display: "flex",
+    alignItems: "center",
   },
   tab: (activeJobType, item) => ({
     paddingVertical: SIZES.small / 2,
-    paddingHorizontal: SIZES.small,
+    paddingHorizontal: SIZES.xxLarge,
     borderRadius: SIZES.medium,
     borderWidth: 1,
     borderColor: activeJobType === item ? COLORS.secondary : COLORS.gray2,
