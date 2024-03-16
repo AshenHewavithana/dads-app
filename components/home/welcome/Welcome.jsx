@@ -43,6 +43,7 @@ const Welcome = () => {
               style={styles.tab(activeEventType, item)}
               onPress={() => {
                 setActiveEventType(item);
+                console.log(item)
                 router.push(`/search/${item}`)
               }}
             >

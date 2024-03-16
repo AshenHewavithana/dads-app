@@ -1,4 +1,4 @@
-import { Stack } from "expo-router";
+import { Stack, Tabs } from "expo-router";
 import { useCallback } from "react";
 import { useFonts } from "expo-font";
 import * as SplashScreen from 'expo-splash-screen';
@@ -18,7 +18,18 @@ const Layout = () => {
 
     if(!fontsLoaded) return null;
 
-    return <Stack onLayout = {onLayoutRootView}/>;
+    return (
+        onLayoutRootView,
+        <RootLayoutNav />
+    );
 }
 
 export default Layout;
+
+function RootLayoutNav() {
+    return (
+        <Stack>
+            <Stack.Screen name="(tabs)" options={{ headerShown: false }}/>
+        </Stack>
+    )
+}

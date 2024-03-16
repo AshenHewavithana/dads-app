@@ -9,9 +9,11 @@ import location from "../assets/icons/location.png";
 import chevronLeft from '../assets/icons/chevron-left.png'
 import chevronRight from '../assets/icons/chevron-right.png'
 import bell from '../assets/icons/bell.png';
+import home from '../assets/icons/home.png';
 
 export default {
   bell,
+  home,
   heart,
   menu,
   search,
